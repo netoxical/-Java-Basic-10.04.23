@@ -13,7 +13,7 @@ public class homework5 {
         int riderMin = 12;
 //        double armyMin = armyLi * 1.5;
         int armyMin = (int) (armyLi * 1.5);
-        int armyStrengthMin = warriorMin * armyMin + archerMin * armyMin + riderLi * armyMin;
+        int armyStrengthMin = warriorMin * armyMin + archerMin * armyMin + riderMin * armyMin;
 
         System.out.println(armyLi);
         System.out.println(armyMin);
