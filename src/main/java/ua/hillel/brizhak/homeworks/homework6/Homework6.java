@@ -102,9 +102,9 @@ public class Homework6 {
         System.out.println("averageSecondTeamKills = " + averageSecondTeamKills);
 
         if(averageFirstTeamKills > averageSecondTeamKills) {
-            System.out.println("Winner = " + firstTeam);
+            System.out.println("Team " + firstTeam + " won with " + averageFirstTeamKills + " points");
         } else if(averageFirstTeamKills < averageSecondTeamKills) {
-            System.out.println("Winner = " + secondTeam);
+            System.out.println("Team " + secondTeam + " won with " + averageSecondTeamKills + " points");
         } else {
             System.out.println("Tie");
         }
