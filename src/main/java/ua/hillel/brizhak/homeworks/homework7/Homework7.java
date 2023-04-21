@@ -7,19 +7,29 @@ public class Homework7 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Greetings! Try to guess the number from 0 to 10. You have 3 attempts");
         int j = 11;
-        for (int i = 0; i < 3; i++) {
-            int random = (int) (Math.random() * j);
+        int random = (int) (Math.random() * j);
+        int n = 5;
+        int b = n - 1;
+        int a = 0;
+        for (int i = 0; i < n; i++, a++ , b--) {
             int userValue = scanner.nextInt();
             if (userValue == random) {
                 System.out.println("Graz!!! That number was " + random + "!!!");
                 break;
+            } else if (userValue > 10) {
+                b = b + 1;
+                i = i - 1;
+                System.out.println("Try to guess the number from 0 to 10");
             } else if (userValue != random && i == 0) {
-                System.out.println("Wrong!! Try again. 2 tries left");
+                a = a + 1;
+                System.out.println("Wrong!! Try again. " + b + " tries left");
             } else if (userValue != random && i == 1) {
-                System.out.println("Wrong!! Try again. 1 tries left");
+                a = a + 1;
+                System.out.println("Wrong!! Try again. " + b + " tries left");
             } else if (userValue != random && i == 2) {
                 System.out.println("Wrong!! You lost the game. Try again later)");
             }
+            System.out.println(random);
         }
 
     }
