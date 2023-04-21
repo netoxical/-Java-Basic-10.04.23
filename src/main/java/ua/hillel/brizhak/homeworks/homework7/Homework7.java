@@ -19,19 +19,15 @@ public class Homework7 {
             } else if (userValue > 10) {
                 b = b + 1;
                 i = i - 1;
+                a = a - 1;
                 System.out.println("Try to guess the number from 0 to 10");
-            } else if (userValue != random && i == 0) {
-                a = a + 1;
-                System.out.println("Wrong!! Try again. " + b + " tries left");
-            } else if (userValue != random && i == 1) {
-                a = a + 1;
-                System.out.println("Wrong!! Try again. " + b + " tries left");
-            } else if (userValue != random && i == 2) {
+            } else if (userValue != random && i == n - 1) {
                 System.out.println("Wrong!! You lost the game. Try again later)");
+            } else if (userValue != random && i == a) {
+                a = a++;
+                System.out.println("Wrong!! Try again. " + b + " tries left");
             }
-            System.out.println(random);
         }
-
     }
 }
 
