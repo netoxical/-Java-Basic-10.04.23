@@ -50,17 +50,17 @@ public class Main {
 //
 //
 //
-//        int u = 5;
+        int u = 5;
 //        int y =10;
 //
 //        int sum = ++u + u++ - y-- + ++y; // 6(5+1) + 6(7 пошло в вверх) -10(9 пошло вверх) + 10
 //
 ////        u = u + 1;
-////        u += 1;
-////        u++;
+//        u += 1;
+        u++;
 //
 //        System.out.println("sum = " + sum);
-//        System.out.println("u = " + u);
+        System.out.println("u = " + u);
 //        System.out.println("y = " + y);
 
 //
