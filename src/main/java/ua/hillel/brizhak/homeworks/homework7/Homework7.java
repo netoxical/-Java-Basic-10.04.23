@@ -15,7 +15,6 @@ public class Homework7 {
                 break;
             } else if (userValue != random && i == 0) {
                 System.out.println("Wrong!! Try again. 2 tries left");
-                scanner.nextLine();
             } else if (userValue != random && i == 1) {
                 System.out.println("Wrong!! Try again. 1 tries left");
             } else if (userValue != random && i == 2) {
