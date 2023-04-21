@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Homework7 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Scanner scanner1 = new Scanner(System.in);
 
         System.out.println("Greetings! Try to guess the number from 0 to 10. You have 3 attempts");
         int j = 11;
