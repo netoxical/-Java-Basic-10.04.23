@@ -6,13 +6,13 @@ public class Homework7 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Greetings! Try to guess the number from 0 to 10. You have 3 attempts");
         int j = 11;
         int random = (int) (Math.random() * j);
         int n = 5;
         int b = n - 1;
         int a = 0;
-        for (int i = 0; i < n; i++, a++ , b--) {
+        System.out.println("Greetings! Try to guess the number from 0 to 10. You have " + n + " attempts");
+        for (int i = 0; i < n; i++, a++, b--) {
             int userValue = scanner.nextInt();
                 if (userValue == random) {
                     System.out.println("Graz!!! That number was " + random + "!!!");
@@ -32,4 +32,5 @@ public class Homework7 {
             }
         }
     }
+
 
