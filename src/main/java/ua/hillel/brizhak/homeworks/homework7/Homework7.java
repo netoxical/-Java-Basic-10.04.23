@@ -17,7 +17,7 @@ public class Homework7 {
                 if (userValue == random) {
                     System.out.println("Graz!!! That number was " + random + "!!!");
                     break;
-                } else if (userValue > 10) {
+                } else if (userValue > 10 || userValue < 0) {
                     b = b + 1;
                     i = i - 1;
                     a = a - 1;
