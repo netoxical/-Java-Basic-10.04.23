@@ -8,7 +8,7 @@ public class Homework7 {
 
         int j = 11;
         int random = (int) (Math.random() * j);
-        int n = 7;
+        int n = 3;
         int b = n - 1;
         int a = 0;
         System.out.println("Greetings! Try to guess the number from 0 to 10. You have " + n + " attempts");
