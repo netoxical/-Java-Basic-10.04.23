@@ -18,27 +18,33 @@ public class Homework9 {
             if (team1.length - 1 == i) {
                 System.out.print(team1[i] + "\n");
                 team1Age = team1Age + team1[i];
+                System.out.println("Team 1 age = " + team1Age);
+                System.out.println("Avarage age 1 team = " + (double) team1Age / team1.length);
             } else {
                 System.out.print(team1[i] + ", ");
                 team1Age = team1Age + team1[i];
             }
         }
-        System.out.println(team1Age);
-        System.out.println((double) team1Age / team1.length);
-
-
-
-
         System.out.print("Team2 = ");
         for (int i = 0; i < team2.length; i++) {
             team1[i] = (int) ((Math.random() * (max - min + 1)) + min);
             team2[i] = (int) ((Math.random() * (max - min + 1)) + min);
             if (team2.length - 1 == i) {
-                System.out.print(team2[i]);
-                System.out.println();
+                System.out.print(team2[i] + "\n");
+                team2Age = team2Age + team2[i];
+                System.out.println("Team 2 age = " + team2Age);
+                System.out.println("Avarage age 2 team = " + (double) team2Age / team2.length);
             } else {
                 System.out.print(team2[i] + ", ");
+                team2Age = team2Age + team2[i];
             }
+        }
+        if ((double) team2Age / team2.length > (double) team1Age / team2.length) {
+            System.out.println("Team 2 is older than team 1");
+        } else if ((double) team2Age / team2.length < (double) team1Age / team2.length) {
+            System.out.println("Team 1 is older than team 2");
+        } else {
+            System.out.println("DRAW");
         }
 
 
