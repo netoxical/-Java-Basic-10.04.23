@@ -7,7 +7,7 @@ public class Homework10 {
         Scanner scanner = new Scanner(System.in);
         int[] randomLottery = new int [7];
         int[] userLottery = new int [7];
-
+        System.out.println("Greetings! Enter " + userLottery.length + " numbers from 0 to 9");
         for (int i = 0; i < userLottery.length; i++) {
             if (scanner.hasNextInt()) {
                 int userValume = scanner.nextInt();
@@ -89,13 +89,13 @@ public class Homework10 {
         System.out.println("sorted user numbers = " + Arrays.toString(userLottery));
         System.out.println("sorted lottery numbers = " + Arrays.toString(randomLottery));
         
-        int index = -1;
+        int index = 0;
         int counter = 0;
         for (int i = 0; i < userLottery.length; i++) {
             if (userLottery[i] == randomLottery[i]) {
                 index++;
                 counter++;
-                System.out.println("match in index " + index);
+                System.out.println("match in " + index + "th position");
             } else {
                 index++;
                 continue;
@@ -104,8 +104,10 @@ public class Homework10 {
 
         if (counter == 0) {
             System.out.println("You have 0 matches!!! better luck next time!!!");
+        } else if (counter == 7) {
+            System.out.println("Congratulations!!!!!!! Jackpot!!!!! You have " + counter + " matches");
         } else {
-            System.out.println("congratulations you have " + counter + " matches");
+            System.out.println("Congratulations you have " + counter + " matches");
         }
 
 
