@@ -45,16 +45,5 @@ public class Homework11 {
             }
             System.out.println();
         }
-
-
-
-
-
-
-
-
-
-
-
     }
 }
