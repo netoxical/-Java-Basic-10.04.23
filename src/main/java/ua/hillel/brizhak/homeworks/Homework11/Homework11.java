@@ -28,7 +28,7 @@ public class Homework11 {
         int randomMax = 101;
         int[][] matrix = new int[M][N];
         int[][] newMatrix = new int[N][M];
-
+        System.out.println("Matrix");
         for (int i = 0; i < M; i++) {
             for (int j = 0; j < N; j++) {
                 matrix[i][j] = (int) (Math.random() * randomMax);
@@ -36,8 +36,8 @@ public class Homework11 {
             }
             System.out.println();
         }
-
-        System.out.println("-------------------------------------------------");
+        System.out.println();
+        System.out.println("New Matrix");
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < M; j++) {
                 newMatrix[i][j] = matrix[j][i];
