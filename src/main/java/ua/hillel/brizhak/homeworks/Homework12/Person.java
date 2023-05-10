@@ -15,7 +15,7 @@ public class Person {
                 "London",
                 37742123513L);
     }
-    private static void personInfo(String name, String surname, String city, long phoneNumber) {
+    static void personInfo(String name, String surname, String city, long phoneNumber) {
         System.out.println("Зателефонувати громадянинові " + name + surname + " з міста " + city + " можна за номером " + phoneNumber);
     }
 }
