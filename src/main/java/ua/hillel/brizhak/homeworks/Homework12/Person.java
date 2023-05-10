@@ -18,4 +18,5 @@ public class Person {
     static void personInfo(String name, String surname, String city, long phoneNumber) {
         System.out.println("Зателефонувати громадянинові " + name + surname + " з міста " + city + " можна за номером " + phoneNumber);
     }
+
 }
