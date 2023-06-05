@@ -47,7 +47,7 @@ public class Main {
 ////            System.out.println("4");
 
 
-//        (УМОВА) ?  ВИРАЗ 1 : ВИРАЗ 2 ->  якцо ? дія 1 інакше дія 2
+//        (?????) ?  ????? 1 : ????? 2 ->  ???? ? ?? 1 ?????? ?? 2
 
 //        int a = 20;
 //        int b = 10;
@@ -175,8 +175,8 @@ public class Main {
         // SCANNER
 
         Scanner sc = new Scanner (System.in);
-//        String userValue = sc.next(); //первое слово с консоли
-//        String userValue = sc.nextLine(); // весь ряд с консоли
+//        String userValue = sc.next(); //?????? ????? ? ???????
+//        String userValue = sc.nextLine(); // ???? ??? ? ???????
 //        System.out.println("userValue =" + userValue);
 //
 //        String userValue2 = sc.next();
@@ -190,7 +190,7 @@ public class Main {
             System.out.println("Wrong Data! Try again!");
             System.exit(0);
         }
-        System.out.println("intengerUserValue = " + intengerUserValue); //должно быть в скобках IF
+        System.out.println("intengerUserValue = " + intengerUserValue); //?????? ???? ? ??????? IF
 
         int valume1 = sc.nextInt();
         int valume2 = sc.nextInt();
